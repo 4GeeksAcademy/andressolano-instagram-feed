@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1292e54a41.js" crossorigin="anonymous"></script>
+    <title>Instagram Feed</title>
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+            <div class="icon">
+                <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i>
+                    Instagram</a>
+            </div>
+
+            <div class="icon2">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Create a new post
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Caption:</label>
+                                    <textarea class="form-control"
+                                        id="message-text">Add the caption of your post here</textarea>
+                                </div>
+                                <button type="button" class="btn">
+                                    <i class="fa-solid fa-camera"></i>
+                                </button>
+                                <button type="button" class="btn">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <nav>
+        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i
+                    class="fa-solid fa-table-cells"></i></button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i
+                    class="fa-solid fa-square"></i></button>
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+            tabindex="0">
+            <div class="container-fluid">
+                <style>
+                    .img-ajustada {
+                        width: 97%;
+                        height: 350px;
+                        object-fit: cover;
+                    }
+                </style>
+                <div class="row mb-3">
+                    <div class="col-4">
+                        <img src="https://static.vecteezy.com/system/resources/previews/049/547/676/large_2x/stunning-high-resolution-nature-and-landscape-backgrounds-breathtaking-scenery-in-hd-free-photo.jpg"
+                            class="img-fluid img-ajustada">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://i.pinimg.com/originals/8a/10/37/8a10377f0144cb32768848eedaeb93ae.jpg"
+                            class="img-fluid img-ajustada">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://plus.unsplash.com/premium_photo-1669750822199-fc9114724dd4?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG5hdHVyYWxlemElMjBwYWlzYWplfGVufDB8fDB8fHww"
+                            class="img-fluid img-ajustada">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4">
+                        <img src="https://www.fundacionaquae.org/wp-content/uploads/2021/05/proteger-ecosistemas-e1622287266551-1024x586.jpg"
+                            class="img-fluid img-ajustada">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://e0.pxfuel.com/wallpapers/422/215/desktop-wallpaper-blue-full-high-definition-high-quality-widescreen-beautiful-landscapes-beautiful-nature-beautiful-places-national-park.jpg"
+                            class="img-fluid img-ajustada">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://wallpapers.com/images/hd/super-high-resolution-nature-kilxnd8j2b4n7p0p.jpg"
+                            class="img-fluid img-ajustada">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4">
+                        <img src="https://wallpapers.com/images/hd/super-high-resolution-nature-3840-x-2160-dun9n0dcc1p5m5so.jpg"
+                            class="img-fluid img-ajustada">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdceDMLMnGLhpeQeMIfvHD4WDQ2quR9FAItQ&s"
+                            class="img-fluid img-ajustada">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg"
+                            class="img-fluid img-ajustada">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            <div class="container d-flex flex-column align-items-center mt-4">
+                <div class="card" style="width: 31rem;">
+                    <div class="card-title">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Crazy insta post</h5>
+                            <p class="date"><b>25/07</b></p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="https://static.vecteezy.com/system/resources/previews/049/547/676/large_2x/stunning-high-resolution-nature-and-landscape-backgrounds-breathtaking-scenery-in-hd-free-photo.jpg"
+                            class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-footer">
+                        <p class="likes"><b>333 Likes</b></p>
+                        <p class="card-text">This is an example of an instagram post</p>
+                    </div>
+                </div>
+                <div class="card mt-4" style="width: 31rem;">
+                    <div class="card-title">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Crazy insta post</h5>
+                            <p class="date"><b>25/07</b></p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="https://i.pinimg.com/originals/8a/10/37/8a10377f0144cb32768848eedaeb93ae.jpg"
+                            class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-footer">
+                        <p class="likes"><b>333 Likes</b></p>
+                        <p class="card-text">This is an example of an instagram post</p>
+                    </div>
+                </div>
+                <div class="card mt-4" style="width: 31rem;">
+                    <div class="card-title">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Crazy insta post</h5>
+                            <p class="date"><b>25/07</b></p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="https://plus.unsplash.com/premium_photo-1669750822199-fc9114724dd4?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG5hdHVyYWxlemElMjBwYWlzYWplfGVufDB8fDB8fHww"
+                            class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-footer">
+                        <p class="likes"><b>333 Likes</b></p>
+                        <p class="card-text">This is an example of an instagram post</p>
+                    </div>
+                </div>
+                <div class="card mt-4" style="width: 31rem;">
+                    <div class="card-title">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Crazy insta post</h5>
+                            <p class="date"><b>25/07</b></p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="https://www.fundacionaquae.org/wp-content/uploads/2021/05/proteger-ecosistemas-e1622287266551-1024x586.jpg"
+                            class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-footer">
+                        <p class="likes"><b>333 Likes</b></p>
+                        <p class="card-text">This is an example of an instagram post</p>
+                    </div>
+                </div>
+                <div class="card mt-4" style="width: 31rem;">
+                    <div class="card-title">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Crazy insta post</h5>
+                            <p class="date"><b>25/07</b></p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="https://e0.pxfuel.com/wallpapers/422/215/desktop-wallpaper-blue-full-high-definition-high-quality-widescreen-beautiful-landscapes-beautiful-nature-beautiful-places-national-park.jpg"
+                            class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-footer">
+                        <p class="likes"><b>333 Likes</b></p>
+                        <p class="card-text">This is an example of an instagram post</p>
+                    </div>
+                </div>
+                <div class="card mt-4" style="width: 31rem;">
+                    <div class="card-title">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Crazy insta post</h5>
+                            <p class="date"><b>25/07</b></p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="https://wallpapers.com/images/hd/super-high-resolution-nature-kilxnd8j2b4n7p0p.jpg"
+                            class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-footer">
+                        <p class="likes"><b>333 Likes</b></p>
+                        <p class="card-text">This is an example of an instagram post</p>
+                    </div>
+                </div>
+                <div class="card mt-4" style="width: 31rem;">
+                    <div class="card-title">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Crazy insta post</h5>
+                            <p class="date"><b>25/07</b></p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="https://wallpapers.com/images/hd/super-high-resolution-nature-3840-x-2160-dun9n0dcc1p5m5so.jpg"
+                            class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-footer">
+                        <p class="likes"><b>333 Likes</b></p>
+                        <p class="card-text">This is an example of an instagram post</p>
+                    </div>
+                </div>
+                <div class="card mt-4" style="width: 31rem;">
+                    <div class="card-title">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Crazy insta post</h5>
+                            <p class="date"><b>25/07</b></p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdceDMLMnGLhpeQeMIfvHD4WDQ2quR9FAItQ&s"
+                            class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-footer">
+                        <p class="likes"><b>333 Likes</b></p>
+                        <p class="card-text">This is an example of an instagram post</p>
+                    </div>
+                </div>
+                <div class="card mt-4" style="width: 31rem;">
+                    <div class="card-title">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Crazy insta post</h5>
+                            <p class="date"><b>25/07</b></p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg"
+                            class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-footer">
+                        <p class="likes"><b>333 Likes</b></p>
+                        <p class="card-text">This is an example of an instagram post</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
